@@ -1,0 +1,13 @@
+# ビルド用
+
+FROM python:3.8-slim
+
+# appというディレクトリを切ってそこにすべて入れる
+WORKDIR /app
+COPY . .
+
+# pipenvのインストールとモジュールのインストール
+RUN pip3 install pipenv && pipenv install --system
+
+# PYTHONPATHにappディレクトリを追加
+ENV PYTHONPATH "${PYTHONPATH}:/app"

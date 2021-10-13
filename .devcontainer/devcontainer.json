@@ -1,0 +1,29 @@
+{
+  // コンテナ内のVSCodeに自動で入れる拡張機能
+  "extensions": [
+    // python
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "visualstudioexptteam.vscodeintellicode",
+    "njpwerner.autodocstring",
+
+    // todo
+    "gruntfuggly.todo-tree",
+    "wayou.vscode-todo-highlight",
+
+    // その他見た目系
+    "oderwat.indent-rainbow",
+    "coenraads.bracket-pair-colorizer-2",
+
+    // その他便利ツール
+    "alefragnani.bookmarks",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode"
+  ],
+  // 使用するcompose fileの指定
+  "dockerComposeFile": ["../docker-compose.yml"],
+  // compose fileの中のどのサービスを使用するか
+  "service": "python",
+  // アタッチした際、コンテナ内のどこをカレントディレクトリとするか
+  "workspaceFolder": "/app"
+}

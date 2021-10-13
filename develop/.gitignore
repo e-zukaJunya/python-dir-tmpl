@@ -1,0 +1,4 @@
+# ignoreとサンプル以外はGitにいれたくない
+*
+!sample.ipynb
+!.gitignore

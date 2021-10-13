@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+fmt = "autopep8 --in-place --aggressive --aggressive --recursive src"
+test = "pytest --durations=10 -vv test/steps -s"
+
+[packages]
+boto3 = "*"
+pandas = "*"
+fire = "*"
+
+[dev-packages]
+autopep8 = "*"
+flake8 = "*"
+pytest = "*"
+pytest-mock = "*"
+
+[requires]
+python_version = "3.8"

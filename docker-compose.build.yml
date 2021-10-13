@@ -1,0 +1,8 @@
+# ビルド用
+version: "3"
+services:
+  python:
+    image: my_python
+    build:
+      context: .
+      dockerfile: Dockerfile.build
